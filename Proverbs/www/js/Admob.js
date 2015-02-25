@@ -1,5 +1,4 @@
 function initAds() {
-    alert("initAds");
       if (admob) {
         var adPublisherIds = {
           ios : {
@@ -16,9 +15,11 @@ function initAds() {
 
         admob.setOptions({
           publisherId:      admobid.banner,
-          interstitialAdId: admobid.interstitial
+          interstitialAdId: admobid.interstitial,
+          autoShowBanner: true
         });
 
+        alert("Creating Banner");
         admob.createBannerView();
 
       } else {
