@@ -23,7 +23,7 @@ function initAds() {
         admob.createBannerView();
 
       } else {
-        alert('AdMobAds plugin not ready');
+        alert("AdMobAds plugin not ready");
       }
     }
 
